@@ -688,7 +688,7 @@ class CybersourceREST(ApplePayMixin, BaseClientSidePaymentProcessor):
         )
         processingInformation = Ptsv2paymentsProcessingInformation(
             capture=True,
-            purchase_level="3",
+            purchase_level="2",
         )
         tokenInformation = Ptsv2paymentsTokenInformation(
             transient_token_jwt=transient_token_jwt,
