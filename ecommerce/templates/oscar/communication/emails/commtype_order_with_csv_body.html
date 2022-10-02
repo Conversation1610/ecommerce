@@ -23,7 +23,7 @@
             <tr class="cn-content cn-full-width">
                 <td colspan="2" class="cn-content-msg">
                     <p>{% filter force_escape %}{% blocktrans %}Dear {{full_name}},{% endblocktrans %}{% endfilter %}</p>
-                    <p>{% filter force_escape %}{% blocktrans %}Thank you for purchasing access to {{course_name}}. Let's get your group ready to learn with edX:{% endblocktrans %}{% endfilter %}</p>
+                    <p>{% filter force_escape %}{% blocktrans %}Thank you for purchasing access to {{course_name}}. Let's get your group ready to learn with our Platform {{platform_name}} :{% endblocktrans %}{% endfilter %}</p>
                     <ol>
                         <li>
                             {% blocktrans asvar tmsg %}
@@ -33,7 +33,7 @@
                         </li>
                         <li>{% trans "Distribute one code per learner before the expiration date." as tmsg %}{{ tmsg | force_escape }}</li>
                         <li>{% trans "Pro tip: Track which code is associated with which person." as tmsg %}{{ tmsg | force_escape }}</li>
-                        <li>{% trans "Learners sign-in/register with edX and enroll for the course." as tmsg %}{{ tmsg | force_escape }}</li>
+                        <li>{% trans "Learners sign-in/register with our PLatform and enroll for the course." as tmsg %}{{ tmsg | force_escape }}</li>
                     </ol>
                     <p>
                         {% blocktrans asvar tmsg %}
